@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>Modal window. Popup</title>
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+   <!--------->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+   <!--Make sure this div is right after <body> and it wraps all content. Necessary to avoid scroll jumps-->
+   <div class="wrapper">
+   <!------->
+      <div class="content">
+         <div class="content__container _container">
+            <section class="content__section">
+               <div class="content__text">
+                  <!-- POPUP Link -->
+                  <a class="popup-link" href="#popup-ad">Open popup</a>
+                  <!--------->
+               </div>
+            </section>
+         </div>
+      </div>
+   </div>
+   <!-- POPUP HTML/Copy this to your project-->
+   <div id="popup-ad" class="popup">
+      <div class="popup__body">
+         <div class="popup__close close-popup">
+            <a href="#" class="popup__close-icon">
+               
+            </a>
+         </div>
+         <div class="popup__content">
+            <div class="popup__container">
+               <div class="popup__title">Join us for a special Sylectus customer networking event</div>
+               <div class="popup__subtitle">
+                  September 22 <span>|</span> 4 pm to 8 pm
+               </div>
+               <div class="popup__guest guest-popup">
+                  <div class="guest-popup__title">Special guest speaker:</div>
+                  <div class="guest-popup__info">
+                     <div class="guest-popup__person person-popup">
+                        <div class="person-popup__photo">
+                           <img src="img/Brian Runnels.jpg" alt="Brian Runnels">
+                        </div>
+                        <div class="person-popup__body">
+                           <div class="person-popup__name">
+                              Brian Runnels
+                           </div>
+                           <div class="person-popup__positions">
+                              <p>VP of Safety</p>
+                              <p>Reliance Partners</p>
+                           </div>
+
+                        </div>
+                     </div>
+                     <div class="guest-popup__company">
+                        <!-- Guest company logo -->
+                        <img src="img/reliance.png" alt="Reliance parners">
+                     </div>
+
+                  </div>
+                  <div class="guest-popup__footer">
+                     Brian will discuss, "How to leverage technology for better insurance outcomes"
+                  </div>
+               </div>
+               <div class="popup__footer">
+                  <p>
+                     Bub City - Rosemont, Parkway Bank Park
+                  </p>
+                  <p>
+                     5441 Park Place Rosemont, IL 60018
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!--------->
+   <script src="js/popups.js"></script>
+</body>
+
+</html>
